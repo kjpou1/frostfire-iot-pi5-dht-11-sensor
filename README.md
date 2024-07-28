@@ -163,8 +163,7 @@ To build and run the application using Docker, you need to have Docker and Docke
 1. **Build and run the application:**
 
     ```bash
-    DOCKERFILE=Dockerfile docker-compose up --build  # For general use
-    DOCKERFILE=Dockerfile.pi docker-compose up --build  # For Raspberry Pi
+    docker-compose up --build  # For general use
     ```
 
 2. **Stop the application:**
