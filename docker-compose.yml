@@ -1,0 +1,14 @@
+version: '3'
+services:
+  iot-publisher:
+    build:
+      context: .
+      dockerfile: ${DOCKERFILE:-Dockerfile}
+    environment:
+      - MQTT_BROKER=hicsvntpi
+      - MQTT_PORT=1883
+      - LOCATION=study
+      - DEVICE=temp_humidity_sensor
+    devices:
+      - "/dev/gpiomem:/dev/gpiomem"
+    privileged: true

@@ -1,0 +1,5 @@
+LOCATION=building1/floor1
+DEVICE=device1
+MQTT_BROKER=mqtt.example.com
+MQTT_PORT=1883
+MQTT_TOPIC=iot/devices
